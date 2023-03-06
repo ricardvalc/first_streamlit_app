@@ -9,7 +9,7 @@ streamlit.text('Avocado and egg toast 🥑🍞🍳')
 
 streamlit.header('Make your own frickin smoothie🍔🍇🍊')
 
-import pandas as pd
+import pandas 
 my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
@@ -28,6 +28,6 @@ streamlit.text(fruityvice_response.json())
 
 
 # normalizes the json response
-# fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # outputs as a df or table
-# streamlit.dataframe(fruityvice_normalized)
+streamlit.dataframe(fruityvice_normalized)
