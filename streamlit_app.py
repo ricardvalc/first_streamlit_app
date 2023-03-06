@@ -28,6 +28,6 @@ streamlit.text(fruityvice_response.json())
 
 
 # normalizes the json response
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+# fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # outputs as a df or table
-streamlit.dataframe(fruityvice_normalized)
+# streamlit.dataframe(fruityvice_normalized)
